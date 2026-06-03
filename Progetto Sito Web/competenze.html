@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio brand | Competenze</title>
+	
+	<style>
+			   .logo-text {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #333;
+    border: 2px solid #333;
+    padding: 5px 10px;
+}
+	   header {
+    background: white;
+    padding: 20px 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #e74c3c;
+}
+      body {
+            margin: 0;
+            padding: 0;
+            color: #1a1a1a;
+            font-family: 'Arial', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        
+        .passioni-grid {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 60px 40px; 
+        }
+
+        
+        .passion-item {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .passion-item:hover {
+            transform: translateY(-5px); 
+        }
+
+        .image {
+            width: 100%;
+            aspect-ratio: 4 / 5; 
+            overflow: hidden;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition: scale 0.5s ease;
+        }
+
+        .passion-item:hover img {
+            scale: 1.05;
+        }
+
+        .passion-info h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.8rem;
+            margin: 0 0 10px 0;
+            border-bottom: 1px solid #1a1a1a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .passion-info p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-top: 15px;
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+       
+        @media (max-width: 600px) {
+            .passions-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2rem; }
+        }
+</style>
+
+	
+</head>
+
+<header>
+
+             <h1> Le mie competenze </h1>
+
+
+        <nav class="navbar">
+            <div class="logo-text">GIOVANNI</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="chi-sono.html">CHI SONO</a></li>
+                <li><a href="interessi.html">INTERESSI</a></li>
+                <li><a href="competenze.html">COMPETENZE</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<body>
+	
+	 <main class="passioni-grid">
+        
+        <article class="passion-item">
+            <div class="image">
+                <img src="file/c1.png" alt="informatica">
+            </div>
+            <div class="passion-info">
+                <h2>Linguaggio C# e html</h2>
+                <p>Grazie al mio indirizzo scolastico sto sviluppando delle competenze con il linguaggio C#. Inoltre ho delle conoscenze basilari di html. (per esempio questo sito!)</p>
+            </div>
+        </article>
+
+        <article class="passion-item">
+            <div class="image">
+                <img src="file/cad.jpg" alt="cad">
+            </div>
+            <div class="passion-info">
+                <h2>Programmi CAD</h2>
+                <p>Quest'anno abbiamo iniziato dei lavori su autoCAD e subito me ne sono innamorato. Non so usaro solamente autoCAD ma anche programmi come Inventor, Fusion e Maya.</p>
+            </div>
+        </article>
+
+        <article class="passion-item">
+            <div class="image">
+                <img src="file/i.jpg" alt="inglese">
+            </div>
+            <div class="passion-info">
+                <h2>Inglese</h2>
+                <p>Mi piace molto l'inglese e al momento ho un certificato B1 Cambridge e ho partecipato ad un corso di livello C1 in Inghilterra.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Brazzale Giovanni
+    </footer>
+
+	
+	</body>
+	
+</html>
